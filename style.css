@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: ;
+}
+
+body {
+    font-family: "Inter", "Playfair Display", "DM Serif Text", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --black-color: rgb(27, 27, 27);
+    --white-color: white;
+    --hero-color: rgb(232, 143, 0);
+    --hero-color-light: rgb(247, 232, 205);
+    --accent-color: rgb(10, 19, 66);
+    --main-section-color: rgb(243, 247, 254);
+    --grey-color: rgb(219, 219, 219);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 40px;
+}
+
+.header-logo {
+    width: 84px;
+}
+
+nav ul {
+    display: flex;
+    gap: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+}
+
+li .hover:hover {
+    color: var(--hero-color);
+}
+
+.sign-in-btn {
+    background-color: var(--black-color);
+    padding: 8px 18px;
+    border-radius: .5rem;
+    font-weight: 600;
+    color: var(--white-color);
+    transition: .15s;
+}
+
+.sign-in-btn:hover {
+    opacity: .90;
+}
+
+hr {
+    border-top: none;
+    border-color: var(--black-color);
+    opacity: .15;
+}
+
+.main-section {
+    background-color: var(--main-section-color);
+}
+
+.body-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0px;
+    gap: 16px;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--hero-color)
+}
+
+.hero-body-text {
+    color: var(--accent-color);
+    font-family: Playfair Display;
+    font-weight: 800;
+    font-size: 34px
+}
+
+.text-callout {
+    font-style: italic;
+    color: var(--hero-color);
+}
+
+.hero-cta {
+    width: 400px;
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.sub-length-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.toggle-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 42px;
+    height: 20px;
+    border-radius: 14px;
+    background-color: var(--accent-color);
+    padding: 3px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.toggle-knob {
+    background-color: var(--white-color);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    transition: .25s;
+}
+
+.toggle-checkbox:checked + .toggle-track .toggle-knob {
+    transform:translateX(-24px);
+}
+
+.toggle-checkbox:checked + .toggle-track {
+    background-color: var(--grey-color);
+}
+
+input {
+    display: none;
+}
+
+.sub-length-container h5 {
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.sub-length-container p {
+    font-size: 10px;
+    color: var(--hero-color);
+    background-color: var(--hero-color-light);
+    font-weight: 700;
+    padding: 4px 6px;
+    border-radius: .25rem;
+}
+
+
+.my-checkmark path {
+    fill: var(--hero-color);
+}
+
+.my-checkmark {
+    height: 12px;
+    width: 12px;
+}
+
+.icon-bullets {
+    margin-right: 6px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: var(--white-color);
+    height: fit-content;
+    width: 220px;
+    padding: 40px;
+    border: 1px solid var(--grey-color);
+    border-radius: 1.25rem;
+}
+
+.pricing-card .title {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price-info .price {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    font-family: "DM Serif Text";
+    color: var(--accent-color)
+}
+
+.price-info .currency {
+    font-size: 20px;
+}
+
+.price-info .amount {
+    font-size: 60px;   
+    line-height: .75;
+}
+
+.price-info p {
+    font-size: 13px;
+    color: var(--accent-color)
+}
+
+.plan-info {
+    font-size: 14px;
+    color: var(--accent-color);
+    line-height: 1.5;
+}
+
+.pricing-card hr {
+    width: 100%;
+}
