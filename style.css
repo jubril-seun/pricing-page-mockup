@@ -1,11 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: ;
 }
 
 body {
-    font-family: "Inter", "Playfair Display", "DM Serif Text", Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 :root {
