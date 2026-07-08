@@ -19,6 +19,20 @@ body {
     --grey-color: rgb(219, 219, 219);
 }
 
+.dark-mode {
+    --black-color: rgb(246, 238, 238);
+    --white-color: rgb(12, 12, 12);
+    --hero-color: rgb(195, 123, 6);
+    --hero-color-light: rgb(205, 183, 143);
+    --accent-color: rgb(236, 236, 236);
+    --accent-color2: rgb(169, 169, 169);
+    --main-section-color: rgb(21, 21, 22);
+    --grey-color: rgb(58, 58, 58);
+}
+
+body{
+    background-color: var(--white-color);
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -28,6 +42,10 @@ header {
 
 .header-logo {
     width: 84px;
+}
+
+.header-logo path {
+    fill: var(--black-color);
 }
 
 nav ul {
@@ -70,6 +88,7 @@ hr {
 
 .main-section {
     background-color: var(--main-section-color);
+    padding-bottom: 90px;
 }
 
 .body-copy {
@@ -81,6 +100,15 @@ hr {
     gap: 16px;
 }
 
+.light-dark-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 24px;
+    font-size: 12px;
+    gap: 8px;
+    color: var(--accent-color);
+}
 .hero-title {
     text-transform: uppercase;
     font-weight: 500;
@@ -92,10 +120,11 @@ hr {
     color: var(--accent-color);
     font-family: Playfair Display;
     font-weight: 800;
-    font-size: 34px
+    font-size: 34px;
+    text-align: center;
 }
 
-.text-callout {
+.body-copy .text-callout {
     font-style: italic;
     color: var(--hero-color);
 }
@@ -169,7 +198,7 @@ input {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     max-width: 960px;
-    margin: auto;
+    margin: auto auto 90px auto;
     padding: 0 24px;
 }
 
@@ -192,7 +221,7 @@ input {
     padding: 40px;
     border: 1px solid var(--grey-color);
     border-radius: 1.25rem;
-    min-width: 100px;
+    min-width: 120px;
     color: var(--accent-color);
 }
 
@@ -310,6 +339,31 @@ input {
     color: var(--white-color);
 }
 
-.high-price {
-    color: red;
+.card-2 .cta-btn:hover {
+    background-color: var(--white-color);
+    color: var(--hero-color);
+}
+
+.term-guarantee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 14px;   
+}
+
+.term-guarantee .text-callout {
+    color: var(--hero-color);
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-weight: 500;
+    gap: 56px;
+    padding: 24px 12px;
+    color: var(--accent-color);
 }
